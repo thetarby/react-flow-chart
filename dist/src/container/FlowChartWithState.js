@@ -50,7 +50,7 @@ var FlowChartWithState = /** @class */ (function (_super) {
     FlowChartWithState.prototype.render = function () {
         var _this = this;
         var _a = this.props, Components = _a.Components, config = _a.config;
-        return (React.createElement(__1.FlowChart, { chart: this.state, callbacks: __assign({}, this.stateActions, { onNodeClick: function (nodeId) { _this.props.onNodeClick(nodeId); return _this.stateActions.onNodeClick(nodeId); }, onDeleteKey: function (x) { return console.log(x); }, onLinkClick: function (linkId) { _this.props.onNodeClick(linkId); return _this.stateActions.onLinkClick(linkId); } }, this.props.callbacks), Components: Components, config: config }));
+        return (React.createElement(__1.FlowChart, { chart: this.state, callbacks: __assign({}, this.stateActions, { onNodeClick: function (nodeId) { _this.props.onNodeClick(nodeId); return _this.stateActions.onNodeClick(nodeId); }, onLinkClick: function (linkId) { _this.props.onLinkClick(linkId); return _this.stateActions.onLinkClick(linkId); } }, this.props.callbacks), Components: Components, config: config }));
     };
     FlowChartWithState.defaultProps = {
         callbacks: {},
